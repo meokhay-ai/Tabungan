@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tabungan identity — emerald "savings sprout" + honey accent on warm cream. */
+  --color-bg: #f6f3ea;
+  --color-bg-soft: #efeadb;
+  --color-card: #fffdf7;
+  --color-ink: #1c2b24;
+  --color-ink-soft: #51635b;
+  --color-line: #e3dcc9;
+
+  --color-brand: #0f7a5a;
+  --color-brand-deep: #0a5a42;
+  --color-brand-soft: #d7eee3;
+  --color-brand-ink: #063b2b;
+
+  --color-honey: #e0922f;
+  --color-honey-soft: #fbeccf;
+  --color-honey-ink: #7a4d12;
+
+  --color-danger: #c2453a;
+  --color-danger-soft: #f7ddd9;
+
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --shadow-card: 0 1px 2px rgba(16, 40, 30, 0.04), 0 8px 24px -16px rgba(16, 40, 30, 0.25);
+  --shadow-pop: 0 24px 60px -24px rgba(16, 40, 30, 0.4);
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(60rem 40rem at 110% -10%, rgba(15, 122, 90, 0.07), transparent 60%),
+    radial-gradient(50rem 40rem at -10% 0%, rgba(224, 146, 47, 0.07), transparent 55%);
+  background-attachment: fixed;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+.tab-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+@keyframes tab-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tab-rise {
+  animation: tab-rise 0.4s ease both;
+}
+
+@keyframes tab-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tab-spin {
+  animation: tab-spin 0.8s linear infinite;
+}
+
+@keyframes tab-shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+.tab-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg-soft) 25%,
+    #f2eede 37%,
+    var(--color-bg-soft) 63%
+  );
+  background-size: 800px 100%;
+  animation: tab-shimmer 1.4s ease infinite;
+  border-radius: 0.75rem;
+}

@@ -1,0 +1,17 @@
+[package]
+name = "family-vault"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT"
+description = "Soroban on-chain family-allowance vault: a parent deposits XLM, allocates per-recipient allowances, and each recipient claims up to their balance."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = "22"
+
+[dev-dependencies]
+soroban-sdk = { version = "22", features = ["testutils"] }
