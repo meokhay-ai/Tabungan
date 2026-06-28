@@ -66,6 +66,17 @@ created, on-chain contract actions, and total XLM deposited / claimed. Tabungan
 ships with **zero seeded data** — every number was produced by a real wallet and a
 confirmed contract call.
 
+![Stats](../screen-shot/07-stats.jpg)
+
+| Metric | Value |
+|---|---|
+| Unique wallets | 69 |
+| Logins | 81 |
+| Pockets | 1 |
+| On-chain actions | 7 |
+| XLM deposited | 25 |
+| XLM claimed | 2 |
+
 ## Screens
 
 | Landing | Connect wallet | Sign challenge |
