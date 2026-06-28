@@ -66,7 +66,7 @@ created, on-chain contract actions, and total XLM deposited / claimed. Tabungan
 ships with **zero seeded data** — every number was produced by a real wallet and a
 confirmed contract call.
 
-![Stats](../screen-shot/07-stats.jpg)
+![Stats](screen-shot/07-stats.jpg)
 
 | Metric | Value |
 |---|---|
@@ -81,17 +81,17 @@ confirmed contract call.
 
 | Landing | Connect wallet | Sign challenge |
 |---|---|---|
-| ![Landing](../screen-shot/01-landing.jpg) | ![Connect](../screen-shot/02-connect-popup.jpg) | ![Sign challenge](../screen-shot/03-sign-challenge-popup.jpg) |
+| ![Landing](screen-shot/01-landing.jpg) | ![Connect](screen-shot/02-connect-popup.jpg) | ![Sign challenge](screen-shot/03-sign-challenge-popup.jpg) |
 
 | Funded vault | Sign deposit | Deposit confirmed |
 |---|---|---|
-| ![Dashboard](../screen-shot/04-dashboard.jpg) | ![Sign deposit](../screen-shot/05-deposit-sign-popup.jpg) | ![Deposit success](../screen-shot/06-deposit-success.jpg) |
+| ![Dashboard](screen-shot/04-dashboard.jpg) | ![Sign deposit](screen-shot/05-deposit-sign-popup.jpg) | ![Deposit success](screen-shot/06-deposit-success.jpg) |
 
 | Live stats |
 |---|
-| ![Stats](../screen-shot/07-stats.jpg) |
+| ![Stats](screen-shot/07-stats.jpg) |
 
-Mobile: ![Mobile](../screen-shot/08-mobile.jpg)
+Mobile: ![Mobile](screen-shot/08-mobile.jpg)
 
 ## The contract
 
