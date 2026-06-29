@@ -51,6 +51,14 @@ Every action is built unsigned on the server, signed in your browser by
 Freighter, then submitted and polled via the **Soroban RPC**. The result shows
 the transaction hash with a link to stellar.expert.
 
+
+---
+## Demo & Pitch Deck
+
+- **Demo Video:** [Watch Demo](https://drive.google.com/file/d/1InXMzfoH_l6hdGNbQCvsK0gZwgrAe_Hu/view?usp=drive_link)
+- **Pitch Deck:** [View Pitch Deck](https://drive.google.com/file/d/125b96sJ-lXhtXCptPfyHmOUTsQg37gP9/view?usp=drive_link)
+---
+
 ### Assets: XLM vault, USDC opt-in
 
 The vault settles in **native XLM**, which needs no trustline and works for any
