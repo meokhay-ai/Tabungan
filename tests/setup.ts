@@ -16,7 +16,7 @@ if (!globalThis.crypto || typeof globalThis.crypto.getRandomValues !== 'function
 process.env.DRIZZLE_DATABASE_URL ??= 'postgres://test:test@localhost:5432/test';
 process.env.SESSION_SECRET ??= 'tabungan-test-session-secret-at-least-32-chars';
 process.env.STELLAR_NETWORK ??= 'testnet';
-process.env.STELLAR_HORIZON_URL ??= 'https://horizon-testnet.stellar.org';
+process.env.STELLAR_HORIZON_URL ??= 'https://horizon.stellar.org';
 process.env.STELLAR_NETWORK_PASSPHRASE ??= 'Test SDF Network ; September 2015';
 process.env.USDC_ASSET_CODE ??= 'USDC';
 process.env.USDC_ASSET_ISSUER_TESTNET ??=

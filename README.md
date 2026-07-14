@@ -1,5 +1,13 @@
 # Tabungan
 
+## 🌐 Mainnet (LIVE)
+
+- **Live app:** https://tabungan-stellar.vercel.app
+- **Network:** Stellar public (mainnet)
+- **Soroban contract:** `CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB`
+- **Explorer:** https://stellar.expert/explorer/public/contract/CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB
+
+
 **A family allowance vault that lives on-chain.**
 
 Live: **https://tabungan-psi.vercel.app** · Network: **Stellar testnet**
@@ -50,14 +58,6 @@ backend has to babysit. Tabungan does neither:
 Every action is built unsigned on the server, signed in your browser by
 Freighter, then submitted and polled via the **Soroban RPC**. The result shows
 the transaction hash with a link to stellar.expert.
-
-
----
-## Demo & Pitch Deck
-
-- **Demo Video:** [Watch Demo](https://drive.google.com/file/d/1InXMzfoH_l6hdGNbQCvsK0gZwgrAe_Hu/view?usp=drive_link)
-- **Pitch Deck:** [View Pitch Deck](https://drive.google.com/file/d/125b96sJ-lXhtXCptPfyHmOUTsQg37gP9/view?usp=drive_link)
----
 
 ### Assets: XLM vault, USDC opt-in
 

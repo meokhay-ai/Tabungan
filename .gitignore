@@ -17,3 +17,17 @@ yarn-error.log*
 .vercel
 *.tsbuildinfo
 next-env.d.ts
+
+.env
+.env.local
+.env.prod
+.env.*.local
+*.bak
+*.testnet.bak
+contracts/target/
+node_modules/
+.next/
+.vercel/
+
+.vercel
+.env*

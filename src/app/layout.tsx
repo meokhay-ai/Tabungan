@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3001'),
   title: 'Tabungan — Family allowance, on-chain',
   description:
-    'Tabungan turns your Stellar wallet into a family allowance desk. Add a pocket for each kid, then send real testnet allowances in XLM or USDC — every payment is a verifiable on-chain transaction.',
+    'Tabungan turns your Stellar wallet into a family allowance desk. Add a pocket for each kid, then send real mainnet allowances in XLM or USDC — every payment is a verifiable on-chain transaction.',
   icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'Tabungan — Family allowance, on-chain',
