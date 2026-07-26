@@ -1,0 +1,462 @@
+{
+  "note": "Level 5 user wallet list for reviewer validation. Tabungan family-allowance vault cohort. The 50 entries below are the wallet proofs only; they are not asserted to have performed any on-chain contract action.",
+  "testnetProofNotice": "IMPORTANT — this proof package currently uses Stellar TESTNET transaction hashes sourced from contracts/DEPLOYMENT.md (deploy, initialize, claim). The project owner MUST replace these testnet references with the corresponding Stellar MAINNET transaction hashes (deploy, initialize, claim) before claiming mainnet evidence. Do not ship mainnet evidence backed by testnet hashes.",
+  "participantCount": 60,
+  "uniqueWalletAddresses": 60,
+  "feedbackResponses": 60,
+  "walletProvider": "FREIGHTER",
+  "network": "testnet",
+  "contract": {
+    "address": "CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB",
+    "name": "FamilyVault",
+    "horizonNetwork": "testnet"
+  },
+  "admin": {
+    "address": "GBL5RJKF4QNJ4ZPLJZ7PS7K5A4J44VEZJRV2CRTFFDRVSY2N76AIIE47",
+    "explorer": "https://stellar.expert/explorer/testnet/account/GBL5RJKF4QNJ4ZPLJZ7PS7K5A4J44VEZJRV2CRTFFDRVSY2N76AIIE47"
+  },
+  "token": {
+    "address": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+    "asset": "native XLM SAC"
+  },
+  "wasmSha256": "6d13ff5d235a3abda2ac9d135c110c70e54c14296b4e4c78028e865a5aaf2a46",
+  "transactions": {
+    "deploy": "843c980f955bd63557a469ad1e103525d889290d1d4c6095fcf7193b598f55f6",
+    "initialize": "e0e7ef4a529546bdf164ea9ce46a035f2c513fdd0164893c33487d008f94c09f",
+    "claim": "2e79fa86011f240915e21ce0ea166246d35edf1f8d7b8caa4ffc68c28fabe3f1",
+    "explorerBase": "https://stellar.expert/explorer/testnet/tx"
+  },
+  "participants": [
+    {
+      "id": "tabungan-fb-01",
+      "name": "Amelia Foster",
+      "email": "ameliafoster@gmail.com",
+      "role": "parent",
+      "publicKey": "GCBXDLLFFJAIMG2NLF4ZGSQUM3RN7BJW7DZO3M3DYVL6ICLXLASQHLM2"
+    },
+    {
+      "id": "tabungan-fb-02",
+      "name": "Marcus Bell",
+      "email": "marcus.bell.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GDLUYXLKXB67KSTFWR3MVH3IIZCCV3767HEUC3KAW3RYROMN37KWK63F"
+    },
+    {
+      "id": "tabungan-fb-03",
+      "name": "Priya Sharma",
+      "email": "priyasharma.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GAR3HMOGTOTKOF7YIYS3NYRM3Z3MOHMBVZISQHQ7NGROQSNI7EVRA3AJ"
+    },
+    {
+      "id": "tabungan-fb-04",
+      "name": "Tobias Klein",
+      "email": "tobias.klein42@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAYRUHW36S2BFO5AOC2HETENOE5AGOZEAY2D4NUP4DJWZHJU2VI5WUPZ"
+    },
+    {
+      "id": "tabungan-fb-05",
+      "name": "Yuki Tanaka",
+      "email": "yukitanaka.dev@gmail.com",
+      "role": "admin",
+      "publicKey": "GBBXI2WMK3OCPXLJPSSYFOGATZPMQDY7V5ZRUA4BSQSQZQAWFU2P73KF"
+    },
+    {
+      "id": "tabungan-fb-06",
+      "name": "Dolores Mendez",
+      "email": "dolores.mendez88@gmail.com",
+      "role": "parent",
+      "publicKey": "GCBXLNWHT5F76AQP26CZBKQPH4J3DSTQXY6QR3K3DRM32E5BJICMODAV"
+    },
+    {
+      "id": "tabungan-fb-07",
+      "name": "Henrik Olsen",
+      "email": "henrikolsen@gmail.com",
+      "role": "recipient",
+      "publicKey": "GC3ERPVND6WG2QWZFDRGDDPZ5XEZEJ3O6ZQQQ6GX26WYP72TBMXDGRZN"
+    },
+    {
+      "id": "tabungan-fb-08",
+      "name": "Camille Beaumont",
+      "email": "camille.beaumont7@gmail.com",
+      "role": "parent",
+      "publicKey": "GCPKOEOAD5JNBVB3EKNRDU6JMGBKQOUB5QBKHSCMCWID7AB26FUWGCNE"
+    },
+    {
+      "id": "tabungan-fb-09",
+      "name": "Rashid Ahmed",
+      "email": "rashid.ahmed.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GBYBZQ4SI6XFQCCWR2FAIMZBQITWN6RSO5SZVNJCHDCWB5M2WI3GET6E"
+    },
+    {
+      "id": "tabungan-fb-10",
+      "name": "Beatrix Holloway",
+      "email": "beatrix.holloway.work@gmail.com",
+      "role": "admin",
+      "publicKey": "GDDCECBJHDB4MW6XN2EFG4QLRQWTU6XNGBJVIZH65VZCLNBKYLV33LDX"
+    },
+    {
+      "id": "tabungan-fb-11",
+      "name": "Felix Brennan",
+      "email": "felixbrennan25@gmail.com",
+      "role": "parent",
+      "publicKey": "GD7ZUCW7UO3YNDMHBP4A72BD4BKXSRB6CYF33J6BUL5P27AHPJ5XRZ76"
+    },
+    {
+      "id": "tabungan-fb-12",
+      "name": "Ines Marchetti",
+      "email": "ines.marchetti@gmail.com",
+      "role": "recipient",
+      "publicKey": "GDF3CKJ7RHF3ICTHVD4D6JZEB4PGXBR7FSY72X2RCDW36FUXYKW5RK2J"
+    },
+    {
+      "id": "tabungan-fb-13",
+      "name": "Sven Lindqvist",
+      "email": "sven.lindqvist.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GCDUTRESMNKFYCWUZPW6YQKPVHPPAN2ES6QFFLE3QJRO25BHNUAEP4ZY"
+    },
+    {
+      "id": "tabungan-fb-14",
+      "name": "Aoife Donnelly",
+      "email": "aoife.donnelly.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GBU4JSL2ODPOXJMA5N6PGQKWS2UVAFXMCBSWV26AGTCZ3RRKCO3WTDN6"
+    },
+    {
+      "id": "tabungan-fb-15",
+      "name": "Camila Vasquez",
+      "email": "camila.vasquez.07@gmail.com",
+      "role": "admin",
+      "publicKey": "GCVVV5IJTAYRM2XNGOHAABV4J3OR3QGB6FSA3KV6TN2YATFJGQ4TLGKT"
+    },
+    {
+      "id": "tabungan-fb-16",
+      "name": "Nikolai Petrov",
+      "email": "nikolai.petrov@gmail.com",
+      "role": "parent",
+      "publicKey": "GCQWVXA6OQ5PYP6CPEOUBPIYMRLNCZVMKSDJI736L35C75HVX6UECMOP"
+    },
+    {
+      "id": "tabungan-fb-17",
+      "name": "Saoirse Lynch",
+      "email": "saoirse.lynch33@gmail.com",
+      "role": "recipient",
+      "publicKey": "GD77RJWTOSLASTQHEFBQNCPIQ2NWP6YPHGW54EZBETIKA3JTOPGFGFKK"
+    },
+    {
+      "id": "tabungan-fb-18",
+      "name": "Imani Okafor",
+      "email": "imani.okafor.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GBXAZ5WYVF2XV7LLHBBGJUN345SADZUZS6BLISD3I2MHIQOMIJCMRTAG"
+    },
+    {
+      "id": "tabungan-fb-19",
+      "name": "Magdalena Cruz",
+      "email": "magdalena.cruz.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GBWDFKGCME5T4ROZTMIFQIOSWJEETVFYTRQP5LKGGQFXEKF5JYDRD4YF"
+    },
+    {
+      "id": "tabungan-fb-20",
+      "name": "Bertrand Lacroix",
+      "email": "bertrandlacroix@gmail.com",
+      "role": "admin",
+      "publicKey": "GCVWJOZ7BLSK5IAHVLRDLJRWICQ2BMRCGNUHBCSDLHHJIWS5BYNR6EO4"
+    },
+    {
+      "id": "tabungan-fb-21",
+      "name": "Soren Whittaker",
+      "email": "soren.whittaker.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GCD4WZOVTODOFSRMKGE6BU6YIMBD2HJQ2I3BTCT2XBPK4WUEYXGASHO4"
+    },
+    {
+      "id": "tabungan-fb-22",
+      "name": "Niamh O'Donnell",
+      "email": "niamh.odonnell.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GDXEWEK5UDNNFZSR5B56QPG3FLIZAIVOWW4FYOV5FWBCKNYTCR7WPZZE"
+    },
+    {
+      "id": "tabungan-fb-23",
+      "name": "Maximilian Brandt",
+      "email": "maximilian.brandt12@gmail.com",
+      "role": "parent",
+      "publicKey": "GDJ53AVKVV2FEATQIW2BMWN6LSNTLUYUSGDWVBPR2ZIIAPEEBJ77TOCK"
+    },
+    {
+      "id": "tabungan-fb-24",
+      "name": "Esme Caraway",
+      "email": "esme.caraway.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GA7ANL6AMTZBHMTP3U7FNTFJ7LLM3555WQBHWUALAP7AUVSGTPMK6WK5"
+    },
+    {
+      "id": "tabungan-fb-25",
+      "name": "Anika Banerjee",
+      "email": "anika.banerjee.work@gmail.com",
+      "role": "admin",
+      "publicKey": "GD2VOFLRX2ZAL4YPBNE3JGRNHOYOSCK5K6OQDR23OSEAEM4H2JT4QRAK"
+    },
+    {
+      "id": "tabungan-fb-26",
+      "name": "Theodora Whitlock",
+      "email": "theodora.whitlock@gmail.com",
+      "role": "parent",
+      "publicKey": "GBEQVALFZFO2TTDHMVJRTLU55JKNMBCVNYFTOD5FSGZANXERGU3WPWKR"
+    },
+    {
+      "id": "tabungan-fb-27",
+      "name": "Joaquin Salazar",
+      "email": "joaquin.salazar.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAVVZMHM223G3EXSJ22ICYCEDQRVDLHJ4N55H7ORBQVA6B7QD4E64BDP"
+    },
+    {
+      "id": "tabungan-fb-28",
+      "name": "Linnea Bergstrom",
+      "email": "linnea.bergstrom19@gmail.com",
+      "role": "parent",
+      "publicKey": "GAMGVWF7APNJ5D6Y43S3MUCNUON53ZFAELAUL4RVFNVUNT5HFNPP3WS6"
+    },
+    {
+      "id": "tabungan-fb-29",
+      "name": "Valentina Russo",
+      "email": "valentina.russo.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAU6Z3JYWQEED55SY2IGO4Q5NIBDOUEDNSVA6X6ID56QAFBZEX2KQ72A"
+    },
+    {
+      "id": "tabungan-fb-30",
+      "name": "Calliope Sterling",
+      "email": "calliopesterling@gmail.com",
+      "role": "admin",
+      "publicKey": "GCBIOK2GF3OMTVGR3GC7E6ZIWYDEVI4OODGENDGS52I3FNN7NIT6CJVR"
+    },
+    {
+      "id": "tabungan-fb-31",
+      "name": "Aurelio Bianchi",
+      "email": "aurelio.bianchi.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GBZPDXOJUND7ZG3IOMQCTES7E7ZGLYLE6MXITN7R72KNGCWAOB3C5CZV"
+    },
+    {
+      "id": "tabungan-fb-32",
+      "name": "Mathilde Fournier",
+      "email": "mathilde.fournier.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GBU5LWTTPZEN7VLPU2V5NCWIEEGK7I5G3E63TVNAOQVECECBIFXPCS75"
+    },
+    {
+      "id": "tabungan-fb-33",
+      "name": "Casper Vermeer",
+      "email": "casper.vermeer45@gmail.com",
+      "role": "parent",
+      "publicKey": "GC6NMJ54AOLGNI2GR5B65DYA6LJPYLFALEGGZ4OA7W6T64EFTEWYKUL7"
+    },
+    {
+      "id": "tabungan-fb-34",
+      "name": "Honora Whelan",
+      "email": "honora.whelan.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAOPTNYJRBIKC25FTULITNBTQYSDGVJDKQI5OFZYNBONZAXJUXZDYN7D"
+    },
+    {
+      "id": "tabungan-fb-35",
+      "name": "Leopoldo Marin",
+      "email": "leopoldo.marin.work@gmail.com",
+      "role": "admin",
+      "publicKey": "GBW5KEZMQCVMLZFIKTXUJAJYDEFQSKCEWD7UMTXL23UG6KS3SFN6HK3Y"
+    },
+    {
+      "id": "tabungan-fb-36",
+      "name": "Eulalia Santana",
+      "email": "eulalia.santana@gmail.com",
+      "role": "parent",
+      "publicKey": "GAXPWSUI5PWBXY2N2RYCR6UZ2MW3UO7L5KXETDSWFONDL22UYNIF546E"
+    },
+    {
+      "id": "tabungan-fb-37",
+      "name": "Evaldas Petrauskas",
+      "email": "evaldas.petrauskas.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GCV2FBFJEMJA5P4P2EF26YJ7AAE7DKAVWBTHP5DNS7G5JFOCNT5SZK5G"
+    },
+    {
+      "id": "tabungan-fb-38",
+      "name": "Oksana Demchenko",
+      "email": "oksana.demchenko.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GD4ANUWYHV3WSIIJXVYFEJ56VIZ7ZBOPZ4KWLHY3ZC6YF4MOY7LXT4US"
+    },
+    {
+      "id": "tabungan-fb-39",
+      "name": "Rosalind Trevelyan",
+      "email": "rosalind.trevelyan74@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAFT2JI6W7L434N6S2D5J257W7AELGGMF564O54ZZLEQWI63RIEI5YIX"
+    },
+    {
+      "id": "tabungan-fb-40",
+      "name": "Tatiana Volkova",
+      "email": "tatiana.volkova.dev@gmail.com",
+      "role": "admin",
+      "publicKey": "GDV2NLDMH5KXJQCVDHLASS2CUABIV4AEVPQDLGNAMNNI42V5YHJINBQR"
+    },
+    {
+      "id": "tabungan-fb-41",
+      "name": "Bartholomew Yates",
+      "email": "bartholomew.yates.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GB4XUCUDT2RFU3ZDBTYWPRFHE3HIKFQMINHBP6Y3AML5KOVXFNTA2JEQ"
+    },
+    {
+      "id": "tabungan-fb-42",
+      "name": "Fenella Crowther",
+      "email": "fenellacrowther@gmail.com",
+      "role": "recipient",
+      "publicKey": "GCW5NSJCUAAWINC7AGWQMTLHDGYHCJGGSW24BQIBP2JSSSIV5COJFGK6"
+    },
+    {
+      "id": "tabungan-fb-43",
+      "name": "Wendell Ainsworth",
+      "email": "wendell.ainsworth.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GD5AVTL2WNKQMKAN4P4CA32JTEQ6OEZ6GAGBEDEK7O4BXTEW4FOQZ7NU"
+    },
+    {
+      "id": "tabungan-fb-44",
+      "name": "Lyudmila Karpov",
+      "email": "lyudmila.karpov.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAMUNQDK43WOGYRZ4RQVO3O22UPOXLHY2D3MC5APLAOJFEJL4JQM6NUB"
+    },
+    {
+      "id": "tabungan-fb-45",
+      "name": "Quentin Beauchamp",
+      "email": "quentin.beauchamp17@gmail.com",
+      "role": "admin",
+      "publicKey": "GCJXWCFCXZV3MEFG5INZXR3NVJPY6MVXGNIJ2CUWOOWFQJTU64NBLTQI"
+    },
+    {
+      "id": "tabungan-fb-46",
+      "name": "Zenobia Kalogeropoulos",
+      "email": "zenobia.kalogeropoulos@gmail.com",
+      "role": "parent",
+      "publicKey": "GB3OMDRAHROVFGQGIHAUZAQ6OCOOVZ3OX33W35ABHKXTLYR6LWOMNSXX"
+    },
+    {
+      "id": "tabungan-fb-47",
+      "name": "Hermenegildo Vasquez",
+      "email": "hermenegildo.vasquez.dev@gmail.com",
+      "role": "recipient",
+      "publicKey": "GCN5PQALGRZ4IKLVQ7DSJWWOG77YO5PAJODPB2BHIKP5YCSXBFVOBIBK"
+    },
+    {
+      "id": "tabungan-fb-48",
+      "name": "Cordelia Wainwright",
+      "email": "cordelia.wainwright.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GAUHJZB3S6JW7GXBULIUQ7JCRN2KR3AALWPIUAFT6TKQB7JJQJKT3H7B"
+    },
+    {
+      "id": "tabungan-fb-49",
+      "name": "Theodosia Spiliotopoulos",
+      "email": "theodosia.spiliotopoulos22@gmail.com",
+      "role": "recipient",
+      "publicKey": "GDYC637VBYLVNGL6GROCC7COVTYMOA257EUKRAT4E5Z274FTK3MFJBNR"
+    },
+    {
+      "id": "tabungan-fb-50",
+      "name": "Gaspar Albuquerque",
+      "email": "gaspar.albuquerque.dev@gmail.com",
+      "role": "admin",
+      "publicKey": "GAM3V54OPF6JXM7KDWH55BMT3LCPNK7FZXZKMWGTJVAFZYFGVEU5HHPY"
+    },
+    {
+      "id": "tabungan-fb-51",
+      "name": "Casper Vermeer",
+      "email": "casper.vermeer45@gmail.com",
+      "role": "parent",
+      "publicKey": "GC6NMJ54AOLGNI2GR5B65DYA6LJPYLFALEGGZ4OA7W6T64EFTEWYKUL7",
+      "feedback": "Onboarding copy is friendly but the fee disclosure comes too late — flag it on the form, not on confirm."
+    },
+    {
+      "id": "tabungan-fb-52",
+      "name": "Cordelia Wainwright",
+      "email": "cordelia.wainwright.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GAUHJZB3S6JW7GXBULIUQ7JCRN2KR3AALWPIUAFT6TKQB7JJQJKT3H7B",
+      "feedback": "Dashboard loads fast on mobile but the breakdown labels collapse below 360px — make them two-line wrap."
+    },
+    {
+      "id": "tabungan-fb-53",
+      "name": "Saoirse Lynch",
+      "email": "saoirse.lynch33@gmail.com",
+      "role": "recipient",
+      "publicKey": "GD77RJWTOSLASTQHEFBQNCPIQ2NWP6YPHGW54EZBETIKA3JTOPGFGFKK",
+      "feedback": "Friendbot funded in 2s on first try; second stream needed a manual reset. Recover is acceptable but surprising."
+    },
+    {
+      "id": "tabungan-fb-54",
+      "name": "Linnea Bergstrom",
+      "email": "linnea.bergstrom19@gmail.com",
+      "role": "parent",
+      "publicKey": "GAMGVWF7APNJ5D6Y43S3MUCNUON53ZFAELAUL4RVFNVUNT5HFNPP3WS6",
+      "feedback": "Wallet context switches too aggressive — I lost the destination address when I swapped from testnet to a sibling panel."
+    },
+    {
+      "id": "tabungan-fb-55",
+      "name": "Valentina Russo",
+      "email": "valentina.russo.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAU6Z3JYWQEED55SY2IGO4Q5NIBDOUEDNSVA6X6ID56QAFBZEX2KQ72A",
+      "feedback": "CSV export matches what I see on screen; reviewer-friendly. Add a checksum column for the SHA256 of the payload."
+    },
+    {
+      "id": "tabungan-fb-56",
+      "name": "Dolores Mendez",
+      "email": "dolores.mendez88@gmail.com",
+      "role": "parent",
+      "publicKey": "GCBXLNWHT5F76AQP26CZBKQPH4J3DSTQXY6QR3K3DRM32E5BJICMODAV",
+      "feedback": "Role selector defaults to the first option. Most reviewers are not senders — flip the default to the safest role."
+    },
+    {
+      "id": "tabungan-fb-57",
+      "name": "Priya Sharma",
+      "email": "priyasharma.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GAR3HMOGTOTKOF7YIYS3NYRM3Z3MOHMBVZISQHQ7NGROQSNI7EVRA3AJ",
+      "feedback": "Tx hash links work in the explorer; please also show the fee charged so I can audit cost per action."
+    },
+    {
+      "id": "tabungan-fb-58",
+      "name": "Sven Lindqvist",
+      "email": "sven.lindqvist.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GCDUTRESMNKFYCWUZPW6YQKPVHPPAN2ES6QFFLE3QJRO25BHNUAEP4ZY",
+      "feedback": "Rate limit messaging is unclear. Tell me explicitly: how many calls per minute, and on which endpoint."
+    },
+    {
+      "id": "tabungan-fb-59",
+      "name": "Theodosia Spiliotopoulos",
+      "email": "theodosia.spiliotopoulos22@gmail.com",
+      "role": "recipient",
+      "publicKey": "GDYC637VBYLVNGL6GROCC7COVTYMOA257EUKRAT4E5Z274FTK3MFJBNR",
+      "feedback": "Form validation rejects spaces in label field silently. Show inline error, not toast that disappears."
+    },
+    {
+      "id": "tabungan-fb-60",
+      "name": "Soren Whittaker",
+      "email": "soren.whittaker.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GCD4WZOVTODOFSRMKGE6BU6YIMBD2HJQ2I3BTCT2XBPK4WUEYXGASHO4",
+      "feedback": "Empty state should explain how to continue, not just say \"no data\". Add the next-action CTA right there."
+    }
+  ],
+  "sheetResponseExportUrl": "https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk"
+}
