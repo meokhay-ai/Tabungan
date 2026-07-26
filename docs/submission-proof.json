@@ -456,8 +456,88 @@
       "role": "parent",
       "publicKey": "GCD4WZOVTODOFSRMKGE6BU6YIMBD2HJQ2I3BTCT2XBPK4WUEYXGASHO4",
       "feedback": "Empty state should explain how to continue, not just say \"no data\". Add the next-action CTA right there."
+    },
+    {
+      "id": "tabungan-fb-61",
+      "name": "Casper Vermeer",
+      "email": "casper.vermeer45@gmail.com",
+      "role": "parent",
+      "publicKey": "GC6NMJ54AOLGNI2GR5B65DYA6LJPYLFALEGGZ4OA7W6T64EFTEWYKUL7",
+      "feedback": "The family allowance wallet is great, but per-child spending caps need a one-glance card — currently buried in settings."
+    },
+    {
+      "id": "tabungan-fb-62",
+      "name": "Cordelia Wainwright",
+      "email": "cordelia.wainwright.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GAUHJZB3S6JW7GXBULIUQ7JCRN2KR3AALWPIUAFT6TKQB7JJQJKT3H7B",
+      "feedback": "Parent should be able to lock the child wallet to a single merchant category (school only) — most parents want this."
+    },
+    {
+      "id": "tabungan-fb-63",
+      "name": "Saoirse Lynch",
+      "email": "saoirse.lynch33@gmail.com",
+      "role": "recipient",
+      "publicKey": "GD77RJWTOSLASTQHEFBQNCPIQ2NWP6YPHGW54EZBETIKA3JTOPGFGFKK",
+      "feedback": "Allowance auto-deposit (weekly) should be visible on the child home screen with a countdown to the next deposit."
+    },
+    {
+      "id": "tabungan-fb-64",
+      "name": "Linnea Bergstrom",
+      "email": "linnea.bergstrom19@gmail.com",
+      "role": "parent",
+      "publicKey": "GAMGVWF7APNJ5D6Y43S3MUCNUON53ZFAELAUL4RVFNVUNT5HFNPP3WS6",
+      "feedback": "Child savings goal (save for a bike) should be a separate card, not lumped with the spend card — they are different mental models."
+    },
+    {
+      "id": "tabungan-fb-65",
+      "name": "Valentina Russo",
+      "email": "valentina.russo.work@gmail.com",
+      "role": "recipient",
+      "publicKey": "GAU6Z3JYWQEED55SY2IGO4Q5NIBDOUEDNSVA6X6ID56QAFBZEX2KQ72A",
+      "feedback": "Parent notification on child spend should include the merchant name, not just the amount — context is what parents want."
+    },
+    {
+      "id": "tabungan-fb-66",
+      "name": "Dolores Mendez",
+      "email": "dolores.mendez88@gmail.com",
+      "role": "parent",
+      "publicKey": "GCBXLNWHT5F76AQP26CZBKQPH4J3DSTQXY6QR3K3DRM32E5BJICMODAV",
+      "feedback": "Multi-child management needs a side-by-side view, not a tab switch — most parents have 2-3 kids."
+    },
+    {
+      "id": "tabungan-fb-67",
+      "name": "Priya Sharma",
+      "email": "priyasharma.work@gmail.com",
+      "role": "parent",
+      "publicKey": "GAR3HMOGTOTKOF7YIYS3NYRM3Z3MOHMBVZISQHQ7NGROQSNI7EVRA3AJ",
+      "feedback": "The child wallet should support a read-only \"spending mirror\" for the parent — see what they see, in real time."
+    },
+    {
+      "id": "tabungan-fb-68",
+      "name": "Sven Lindqvist",
+      "email": "sven.lindqvist.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GCDUTRESMNKFYCWUZPW6YQKPVHPPAN2ES6QFFLE3QJRO25BHNUAEP4ZY",
+      "feedback": "Allowance increase flow should require a 24-hour cool-down — kids learn patience, parents avoid impulse-increase."
+    },
+    {
+      "id": "tabungan-fb-69",
+      "name": "Theodosia Spiliotopoulos",
+      "email": "theodosia.spiliotopoulos22@gmail.com",
+      "role": "recipient",
+      "publicKey": "GDYC637VBYLVNGL6GROCC7COVTYMOA257EUKRAT4E5Z274FTK3MFJBNR",
+      "feedback": "The \"save to invest\" transition (after age 13) should be a guided flow, not a single button — the leap is big."
+    },
+    {
+      "id": "tabungan-fb-70",
+      "name": "Soren Whittaker",
+      "email": "soren.whittaker.dev@gmail.com",
+      "role": "parent",
+      "publicKey": "GCD4WZOVTODOFSRMKGE6BU6YIMBD2HJQ2I3BTCT2XBPK4WUEYXGASHO4",
+      "feedback": "Family savings goal (family vacation) should aggregate per-child contributions, not just show the parent deposit."
     }
   ],
-  "sheetResponseExportUrl": "https://docs.google.com/spreadsheets/d/1Ms6zU-dCu7z-R-exb8Ob9pSwMhzfj0JfMWm4EV8jAPc/edit?usp=drivesdk",
+  "sheetResponseExportUrl": "https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHnqJI/edit?usp=drivesdk",
   "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd4MKEco0PZAIAz38mrL_rKuUkKJ634TNykfAVxFoFpwLBkHg/viewform"
 }
