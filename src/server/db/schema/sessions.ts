@@ -1,0 +1,12 @@
+import { pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
+
+/** A wallet login. One row per SEP-10 verify. Powers /api/stats. */
+export const sessions = pgTable('sessions', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  publicKey: text('public_key').notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+  expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+});
+
+export type Session = typeof sessions.$inferSelect;
+export type NewSession = typeof sessions.$inferInsert;
