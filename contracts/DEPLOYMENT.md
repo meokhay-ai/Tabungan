@@ -1,8 +1,10 @@
-# FamilyVault — Testnet deployment record
+# FamilyVault — Deployment Record
 
-Live, verified deployment of the `family-vault` Soroban contract on **Stellar Testnet**.
-It is the on-chain core of Tabungan: a parent deposits XLM, allocates a per-recipient
-allowance, and each recipient claims their share straight from the contract.
+Deployment record of the `family-vault` Soroban contract — the testnet deployment
+used for development and the Level 5 proof runs, and the mainnet deployment the
+live app now runs against (see "Mainnet (live)" below). It is the on-chain core
+of Tabungan: a parent deposits XLM, allocates a per-recipient allowance, and each
+recipient claims their share straight from the contract.
 
 ## Addresses
 
@@ -58,8 +60,16 @@ stellar contract optimize --wasm target/wasm32-unknown-unknown/release/family_va
 ./scripts/deploy.sh testnet                                  # deploy + initialize
 ```
 
-## Mainnet
+## Mainnet (live)
 
-The contract is upgradeable (`upgrade(wasm_hash)`, admin-gated). For mainnet, deploy with
-`./scripts/deploy.sh public`, point the app's `SOROBAN_CONTRACT_ID` at the new id, and set
-the token to the native XLM SAC for the public network.
+| Item | Value |
+|---|---|
+| **Contract ID** | `CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB` |
+| Network passphrase | `Public Global Stellar Network ; September 2015` |
+
+Explorer: https://stellar.expert/explorer/public/contract/CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB
+
+Full deploy-tx history wasn't recorded at the time and isn't reconstructed here
+— see the testnet "On-chain proof" section above for what a recorded deploy
+trail looks like. The contract is upgradeable (`upgrade(wasm_hash)`,
+admin-gated), same as testnet.

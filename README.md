@@ -2,12 +2,13 @@
 
 ## Submission Checklist
 
-> The Level 5 evidence below currently uses Stellar **Testnet** transaction
-> hashes for the deployed FamilyVault contract. README and `.env.example`
-> ship mainnet contract configuration, but transaction proof is sourced
-> from `contracts/DEPLOYMENT.md` (testnet). Before claiming mainnet
-> evidence, the project owner must replace testnet hashes with the
-> corresponding mainnet hashes. See
+> The Level 5 evidence below uses Stellar **Testnet** transaction hashes for
+> the `FamilyVault` contract, since that's what was live when the cohort was
+> collected. The contract is also now deployed and confirmed live on Stellar
+> **mainnet** (see the banner below and `contracts/DEPLOYMENT.md`), but full
+> mainnet transaction proof hasn't been recorded yet — so this cohort's
+> on-chain evidence should still be verified against the testnet contract and
+> hashes in `contracts/DEPLOYMENT.md`. See
 > [`docs/level5-proof-package.md`](docs/level5-proof-package.md) for the
 > required TODO slots.
 
@@ -16,16 +17,17 @@
 - [x] **Public GitHub repository** — link public repo
 - [x] **Minimum 20+ meaningful commits** — see commit history on `main`
 - [x] **Live deployed application** — https://tabungan-stellar.vercel.app
-- [x] **PPT/Pitch deck link** — _TODO: paste pitch deck link_
-- [x] **Demo video link** — _TODO: paste demo video link_
+- [x] **PPT/Pitch deck link** — [View Pitch Deck](https://docs.google.com/presentation/d/1CMYNLjBYmpow11HDDVtzZ7DqD-8UV93G/edit?usp=sharing)
+- [x] **Demo video link** — [Watch Demo](https://drive.google.com/file/d/1kdagvLEJA2UESp0FMgSDJMTrmGGx2_RY/view?usp=sharing)
 
 ### Proof
 
 - [x] **Proof of 50+ users** — [50-user wallet list](docs/submission-proof.json) and
       [50-user feedback log](docs/user-feedback-log.md)
 - [x] **Screenshots + analytics + transaction activity** — `screen-shot/07-stats.jpg`
-      and the on-chain `FamilyVault` contract stats on Stellar Testnet
-      ([contract explorer](https://stellar.expert/explorer/testnet/contract/CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB))
+      and the on-chain `FamilyVault` contract stats (testnet deployment used for
+      the cohort: [contract explorer](https://stellar.expert/explorer/testnet/contract/CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB);
+      mainnet deployment now live: [contract explorer](https://stellar.expert/explorer/public/contract/CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB))
 - [x] **Updated README documentation** — [proof package](docs/level5-proof-package.md)
 - [x] **User feedback iteration summary** — [50-user feedback log](docs/user-feedback-log.md)
       and [improvement summary](docs/level5-feedback-iteration-summary.md)
@@ -41,7 +43,7 @@
 
 **A family allowance vault that lives on-chain.**
 
-Live: **https://tabungan-psi.vercel.app** · Network: **Stellar testnet**
+Live: **https://tabungan-psi.vercel.app** · Network: **Stellar mainnet**
 
 Tabungan (Indonesian for *savings*) is a family-allowance app whose money lives
 inside a **Soroban smart contract**, not a database. A parent deposits XLM into
@@ -49,11 +51,14 @@ the **FamilyVault** contract, allocates a per-recipient allowance, and each
 recipient pulls their own share straight from the contract. No backend ever
 custodies the funds, and every balance is verifiable on-chain.
 
-The vault contract is deployed and live on testnet:
+The vault contract is deployed and live on Stellar **mainnet**:
 
-> **FamilyVault contract:** `CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB`
-> ([view on stellar.expert](https://stellar.expert/explorer/testnet/contract/CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB))
-> · Token: native **XLM** SAC `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC`
+> **FamilyVault contract:** [`CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB`](https://stellar.expert/explorer/public/contract/CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB)
+
+The same contract was developed and tested on testnet first:
+`CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB`
+([view on stellar.expert](https://stellar.expert/explorer/testnet/contract/CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB))
+· Token: native **XLM** SAC `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC`
 
 ---
 
@@ -189,7 +194,7 @@ stellar contract optimize --wasm target/wasm32-unknown-unknown/release/family_va
 contracts/
   family-vault/         Soroban contract (lib/types/storage/error/test)
   scripts/deploy.sh     build + optimize + deploy + initialize
-  DEPLOYMENT.md         live testnet contract id + proof txs
+  DEPLOYMENT.md         live contract id + proof txs (testnet + mainnet)
 src/
   app/                  routes (pages + /api/* handlers)
   server/
@@ -298,7 +303,7 @@ https://docs.google.com/spreadsheets/d/1px75CfFm7pA9Oye3uzMV9Ci0QoJ7avw-U-H31SHn
 
 ---
 
-Built for the Stellar APAC hackathon. Testnet only — do not send mainnet value.
+Built for the Stellar APAC hackathon. Live on Stellar mainnet — real value moves on submit.
 
 
 ## User feedback
