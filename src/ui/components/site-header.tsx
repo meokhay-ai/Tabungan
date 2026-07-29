@@ -39,7 +39,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2 sm:gap-3">
           <Pill tone="muted">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-brand)]" />
-            Testnet
+            {process.env.NEXT_PUBLIC_STELLAR_NETWORK === 'public' ? 'Mainnet' : 'Testnet'}
           </Pill>
           <Link
             href="/stats"
