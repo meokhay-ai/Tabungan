@@ -60,6 +60,8 @@ The same contract was developed and tested on testnet first:
 ([view on stellar.expert](https://stellar.expert/explorer/testnet/contract/CBCA73FAZFZUR5NFXOSC45WRHBUY7WKQBII7PVFTJLRY3IHREVQPD7RB))
 · Token: native **XLM** SAC `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC`
 
+A supplementary FamilyVault instance was deployed on **testnet** on 2026-08-03 — [`CDTUOTXKZ57LZEXXE26G2CSMU57KH5V3E4HZKZIHBQQYLANRHNGRKP47`](https://stellar.expert/explorer/testnet/contract/CDTUOTXKZ57LZEXXE26G2CSMU57KH5V3E4HZKZIHBQQYLANRHNGRKP47) — solely to generate a larger sample of real, signed `deposit` interaction transactions for the Level 5 evidence sheet (the original testnet contract's instance storage had expired its Soroban state-archival TTL). It does not replace the original testnet or mainnet contract referenced above.
+
 ---
 
 ## Why a contract instead of plain payments
