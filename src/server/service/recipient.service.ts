@@ -65,6 +65,9 @@ export const recipientService = {
 
   async archive(ownerPublicKey: string, id: string): Promise<void> {
     const row = await this.get(ownerPublicKey, id);
-    await db.update(recipients).set({ archivedAt: new Date() }).where(eq(recipients.id, row.id));
+    const result = await db.update(recipients).set({ archivedAt: new Date() }).where(eq(recipients.id, row.id));
+    if (result.rowCount !== 1) {
+      throw new AppError('NOT_FOUND', 'Pocket not found', 404);
+    }
   },
 };
