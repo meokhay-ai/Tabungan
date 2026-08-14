@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server';
 import { z } from 'zod';
+import { getRateLimitKey } from '@/server/lib/rate-limit';
 import { requireWallet } from '@/server/lib/auth-guard';
 import { created, fromError, ok } from '@/server/lib/http';
 import { amountSchema, assetSchema, labelSchema, parseJson } from '@/server/lib/validators';
@@ -14,6 +15,8 @@ const createSchema = z.object({
   weeklyAmount: amountSchema,
 });
 
+let recipientCreationAttempts = new Map<string, { count: number; resetAt: number }>();
+
 export async function GET(req: NextRequest) {
   try {
     const wallet = await requireWallet(req);
@@ -25,6 +28,19 @@ export async function GET(req: NextRequest) {
 
 export async function POST(req: NextRequest) {
   try {
+    const clientIp = getRateLimitKey(req);
+    const now = Date.now();
+    const record = recipientCreationAttempts.get(clientIp);
+
+    if (record && record.resetAt > now) {
+      if (record.count >= 20) {
+        return new Response('Too many recipient creation attempts', { status: 429 });
+      }
+      record.count++;
+    } else {
+      recipientCreationAttempts.set(clientIp, { count: 1, resetAt: now + 60000 });
+    }
+
     const wallet = await requireWallet(req);
     const input = await parseJson(req, createSchema);
     return created(await recipientService.create(wallet, input));
