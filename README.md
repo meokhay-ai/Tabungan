@@ -16,7 +16,8 @@
 
 - [x] **Public GitHub repository** — link public repo
 - [x] **Minimum 20+ meaningful commits** — see commit history on `main`
-- [x] **Live deployed application** — https://tabungan-stellar.vercel.app
+- [x] **Live deployed application** — https://tabungan-stellar.vercel.app (Stellar Mainnet)
+- [x] **Operator wallet** — [`GCT2YHO3JHSBAXMEWFJUXA4DJNWMUPHFPSY4DN6EQKVQT5GPIUQKWRTP`](https://stellar.expert/explorer/public/account/GCT2YHO3JHSBAXMEWFJUXA4DJNWMUPHFPSY4DN6EQKVQT5GPIUQKWRTP)
 - [x] **PPT/Pitch deck link** — [View Pitch Deck](https://docs.google.com/presentation/d/16eNqydHJvOnpZqDEirUY5NNDGdsGQ4Au/edit?usp=sharing)
 - [x] **Demo video link** — [Watch Demo](https://drive.google.com/file/d/1VmhX4MoPr5hkJXkSwyOwDmDYTD96Im14/view?usp=sharing)
 
