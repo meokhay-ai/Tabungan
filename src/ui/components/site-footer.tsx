@@ -1,6 +1,5 @@
 import { ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
-import { env } from '@/server/config/env';
 import { BrandMark } from '@/ui/components/brand';
 
 export function SiteFooter() {
@@ -12,7 +11,7 @@ export function SiteFooter() {
           <div>
             <p className="font-display text-sm font-semibold text-[var(--color-ink)]">Tabungan</p>
             <p className="text-xs text-[var(--color-ink-soft)]">
-              Family allowance on Stellar {env.STELLAR_NETWORK === 'public' ? 'mainnet' : 'testnet'}
+              Family allowance on Stellar mainnet
             </p>
           </div>
         </div>
@@ -24,7 +23,7 @@ export function SiteFooter() {
             Live stats
           </Link>
           <a
-            href={`https://stellar.expert/explorer/${env.STELLAR_NETWORK === 'public' ? 'public' : 'testnet'}`}
+            href="https://stellar.expert/explorer/testnet"
             target="_blank"
             rel="noreferrer"
             className="font-semibold text-[var(--color-ink-soft)] hover:text-[var(--color-ink)]"

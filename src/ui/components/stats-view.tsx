@@ -81,8 +81,7 @@ export function StatsView() {
           </h1>
           <p className="mt-2 max-w-2xl text-[var(--color-ink-soft)]">
             Tabungan ships with zero seeded data. These counts come straight from wallets that
-            connected and FamilyVault contract actions that actually settled on Stellar{' '}
-            {process.env.NEXT_PUBLIC_STELLAR_NETWORK === 'public' ? 'mainnet' : 'testnet'}.
+            connected and FamilyVault contract actions that actually settled on Stellar mainnet.
           </p>
         </div>
 

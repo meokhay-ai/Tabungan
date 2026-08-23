@@ -88,10 +88,7 @@ export const authService = {
       );
     if (!matched) throw new AppError('UNAUTHORIZED', 'Challenge expired — reconnect', 401);
 
-    const result = await db.update(authNonces).set({ consumedAt: new Date() }).where(eq(authNonces.nonce, nonce));
-    if (result.rowCount !== 1) {
-      throw new AppError('UNAUTHORIZED', 'Challenge already consumed — reconnect', 401);
-    }
+    await db.update(authNonces).set({ consumedAt: new Date() }).where(eq(authNonces.nonce, nonce));
 
     const expiresAt = new Date(Date.now() + env.SESSION_TTL_SECONDS * 1000);
     const [session] = await db

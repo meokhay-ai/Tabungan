@@ -9,7 +9,7 @@ const STEPS = [
   {
     icon: Wallet,
     title: 'Connect & fund your vault',
-    body: 'Sign a one-time challenge with Freighter, then deposit XLM into the FamilyVault Soroban contract. We pin the signature to Stellar testnet, so it works even if your wallet sits on mainnet.',
+    body: 'Sign a one-time challenge with Freighter, then deposit XLM into the FamilyVault Soroban contract. We pin the signature to Stellar mainnet, so it works even if your wallet sits on mainnet.',
   },
   {
     icon: Sprout,
@@ -32,7 +32,7 @@ export function Landing() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-[var(--radius-pill)] bg-[var(--color-honey-soft)] px-3 py-1 text-xs font-semibold text-[var(--color-honey-ink)]">
             <Sprout className="h-3.5 w-3.5" />
-            Stellar testnet · XLM &amp; USDC
+            Stellar mainnet · XLM &amp; USDC
           </span>
           <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.05] text-[var(--color-ink)] sm:text-5xl">
             A family allowance vault

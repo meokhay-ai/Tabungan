@@ -13,8 +13,7 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "db:push": "dotenv -e .env.local -- drizzle-kit push --force",
-    "db:studio": "drizzle-kit studio",
-    "prepare": "husky"
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@stellar/freighter-api": "^6.0.1",
@@ -47,10 +46,7 @@
     "tailwindcss": "^4",
     "tsx": "^4.22.4",
     "typescript": "^5",
-    "vitest": "^4.1.8",
-    "husky": "^9.1.7",
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0"
+    "vitest": "^4.1.8"
   },
   "allowScripts": {
     "@swc/core@1.15.40": true,

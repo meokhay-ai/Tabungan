@@ -2,15 +2,17 @@ import type { NextRequest } from 'next/server';
 import { z } from 'zod';
 import { requireWallet } from '@/server/lib/auth-guard';
 import { fromError, ok } from '@/server/lib/http';
-import { amountSchema, assetSchema, parseJson } from '@/server/lib/validators';
+import { amountSchema, parseJson } from '@/server/lib/validators';
 import { vaultService } from '@/server/service/vault.service';
 
 export const dynamic = 'force-dynamic';
+// Building a Soroban invoke simulates the call against the live RPC.
+export const maxDuration = 60;
 
 const schema = z.object({
   action: z.enum(['deposit', 'allowance', 'withdraw', 'claim']),
   amount: amountSchema,
-  recipientId: z.string().optional(),
+  recipientId: z.string().uuid().optional(),
 });
 
 export async function POST(req: NextRequest) {

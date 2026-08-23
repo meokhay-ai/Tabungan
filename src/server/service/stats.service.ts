@@ -37,16 +37,6 @@ export const statsService = {
     );
     const eventWhere = excl.length ? notInArray(vaultEvents.ownerPublicKey, excl) : undefined;
 
-    let poolBalanceXlm = '0.0000';
-    try {
-      const stroops = BigInt(await readPoolBalanceStroops());
-      const whole = stroops / 10_000_000n;
-      const frac = stroops % 10_000_000n;
-      poolBalanceXlm = `${whole}.${frac.toString().padStart(7, '0').slice(0, 4)}`;
-    } catch {
-      /* keep 0.0000 */
-    }
-
     const [walletRow] = await db
       .select({
         unique: sql<number>`COUNT(DISTINCT ${sessions.publicKey})`,
@@ -81,6 +71,14 @@ export const statsService = {
       .where(eventWhere)
       .orderBy(desc(vaultEvents.createdAt))
       .limit(6);
+
+    let poolBalanceXlm = '0.0000';
+    try {
+      const stroops = await readPoolBalanceStroops();
+      poolBalanceXlm = (Number(stroops) / 1e7).toFixed(4);
+    } catch {
+      /* never 500 */
+    }
 
     return {
       uniqueWallets: Number(walletRow?.unique ?? 0),
