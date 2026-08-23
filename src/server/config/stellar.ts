@@ -28,6 +28,7 @@ export const stellar = {
   sorobanRpcUrl: env.SOROBAN_RPC_URL,
   contractId: env.SOROBAN_CONTRACT_ID,
   vaultToken: env.VAULT_TOKEN_SAC,
+  appContractId: env.APP_CONTRACT_ID,
 } as const;
 
 /** stellar.expert explorer URL for the FamilyVault contract on the active network. */

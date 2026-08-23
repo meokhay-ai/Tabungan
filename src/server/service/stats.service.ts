@@ -2,6 +2,7 @@ import { and, desc, isNull, notInArray, sql } from 'drizzle-orm';
 import { demoExcludeKeys } from '@/server/config/env';
 import { db } from '@/server/db/client';
 import { recipients, sessions, vaultEvents } from '@/server/db/schema';
+import { readPoolBalanceStroops } from '@/server/stellar/vault';
 
 export type PublicStats = {
   uniqueWallets: number;
@@ -10,6 +11,7 @@ export type PublicStats = {
   onchainActions: number;
   xlmDeposited: string;
   xlmClaimed: string;
+  poolBalanceXlm: string;
   recent: Array<{
     label: string;
     kind: string;
@@ -34,6 +36,16 @@ export const statsService = {
       excl.length ? notInArray(recipients.ownerPublicKey, excl) : undefined,
     );
     const eventWhere = excl.length ? notInArray(vaultEvents.ownerPublicKey, excl) : undefined;
+
+    let poolBalanceXlm = '0.0000';
+    try {
+      const stroops = BigInt(await readPoolBalanceStroops());
+      const whole = stroops / 10_000_000n;
+      const frac = stroops % 10_000_000n;
+      poolBalanceXlm = `${whole}.${frac.toString().padStart(7, '0').slice(0, 4)}`;
+    } catch {
+      /* keep 0.0000 */
+    }
 
     const [walletRow] = await db
       .select({
@@ -77,6 +89,7 @@ export const statsService = {
       onchainActions: Number(eventRow?.n ?? 0),
       xlmDeposited: String(eventRow?.deposited ?? '0'),
       xlmClaimed: String(eventRow?.claimed ?? '0'),
+      poolBalanceXlm,
       recent: recentRows.map((r) => ({
         label: r.label ?? labelForKind(r.kind),
         kind: r.kind,

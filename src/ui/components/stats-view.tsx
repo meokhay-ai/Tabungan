@@ -33,6 +33,7 @@ type Stats = {
   onchainActions: number;
   xlmDeposited: string;
   xlmClaimed: string;
+  poolBalanceXlm: string;
   recent: Array<{
     label: string;
     kind: string;
@@ -118,6 +119,14 @@ export function StatsView() {
                 </p>
                 <p className="mt-1 font-display text-3xl font-semibold text-[var(--color-honey)]">
                   {fmtAmount(stats.xlmClaimed, 'XLM')}
+                </p>
+              </div>
+              <div className="tab-card p-5">
+                <p className="text-xs font-medium text-[var(--color-ink-soft)]">
+                  Pool balance (on-chain)
+                </p>
+                <p className="mt-1 font-display text-3xl font-semibold text-[var(--color-brand)]">
+                  {stats.poolBalanceXlm} XLM
                 </p>
               </div>
             </div>

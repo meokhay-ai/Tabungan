@@ -20,6 +20,11 @@ const envSchema = z.object({
   // Native XLM Stellar Asset Contract (the vault's escrowed token; no trustline).
   VAULT_TOKEN_SAC: z.string().default('CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC'),
 
+  // Mainnet FamilyVault contract address whose pooled XLM the stats page surfaces.
+  APP_CONTRACT_ID: z
+    .string()
+    .default('CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB'),
+
   SESSION_SECRET: z.string().min(32, 'SESSION_SECRET must be at least 32 chars'),
   SESSION_COOKIE_NAME: z.string().default('tabungan_session'),
   SESSION_TTL_SECONDS: z.coerce.number().int().positive().default(604800),

@@ -12,6 +12,11 @@ import { stellar } from '@/server/config/stellar';
 import { AppError } from '@/server/lib/http';
 import { isValidAddress } from './network';
 
+const POOL_SAC_ADDRESS =
+  'CAS3J7GYLGXMF6TDJBBYYSE3HQ6BBSMLNUQ34T6TZMYMW2EVH34XOWMA';
+const POOL_BALANCE_ACCOUNT =
+  'CDDMT5CNBFZCO6TEP357XRJ6Z2G5GV4UJTJT5ZHBECUPQ6S32NEV6BHB';
+
 /**
  * The Soroban side of Tabungan: building, submitting and reading the FamilyVault
  * contract. Writes (deposit / set_allowance / claim / withdraw) are built here
@@ -231,4 +236,27 @@ export async function readAllowance(
     | number
     | null;
   return BigInt(v ?? 0n);
+}
+
+export async function readPoolBalanceStroops(): Promise<string> {
+  try {
+    const srv = server();
+    const account = await srv.getAccount(stellar.appContractId);
+    const sac = new Contract(stellar.vaultToken);
+    const tx = new TransactionBuilder(account, {
+      fee: BASE_FEE,
+      networkPassphrase: stellar.passphrase,
+    })
+      .addOperation(sac.call('balance', addr(stellar.appContractId)))
+      .setTimeout(30)
+      .build();
+    const sim = await srv.simulateTransaction(tx);
+    if (rpc.Api.isSimulationError(sim)) return '0';
+    const retval = sim.result?.retval;
+    if (!retval) return '0';
+    const v = scValToNative(retval) as bigint | number | null;
+    return (v ?? 0n).toString();
+  } catch {
+    return '0';
+  }
 }
