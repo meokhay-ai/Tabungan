@@ -50,17 +50,36 @@ export const recipientService = {
     if (existing.length > 0) {
       throw new AppError('ALREADY_EXISTS', 'You already added a pocket for this address', 409);
     }
-    const [row] = await db
-      .insert(recipients)
-      .values({
-        ownerPublicKey,
-        label: input.label.trim(),
-        address: input.address,
-        asset: input.asset,
-        weeklyAmount: input.weeklyAmount,
-      })
-      .returning();
-    return row;
+    try {
+      const [row] = await db
+        .insert(recipients)
+        .values({
+          ownerPublicKey,
+          label: input.label.trim(),
+          address: input.address,
+          asset: input.asset,
+          weeklyAmount: input.weeklyAmount,
+        })
+        .returning();
+      return row;
+    } catch (err) {
+      // Surface the underlying pg error to the client so the "Internal server
+      // error" toast becomes actionable during triage. The wallet is already
+      // authenticated at this point, so the only failure surface here is DB.
+      const pg = err as { code?: string; message?: string; detail?: string; constraint?: string };
+      console.error('[recipients.create] insert failed', {
+        code: pg.code,
+        message: pg.message,
+        detail: pg.detail,
+        constraint: pg.constraint,
+      });
+      throw new AppError(
+        'INTERNAL',
+        `Could not save pocket: ${pg.code ?? 'DB'} ${pg.message ?? 'unknown'}`,
+        500,
+        { code: pg.code, detail: pg.detail, constraint: pg.constraint },
+      );
+    }
   },
 
   async archive(ownerPublicKey: string, id: string): Promise<void> {
